@@ -1,0 +1,28 @@
+{
+  "root": "apps/secure-file-e2e",
+  "sourceRoot": "apps/secure-file-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/secure-file-e2e/cypress.json",
+        "devServerTarget": "secure-file:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "secure-file:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/secure-file-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["secure-file"]
+}

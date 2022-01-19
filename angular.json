@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "secure-file": "apps/secure-file",
+    "secure-file-e2e": "apps/secure-file-e2e"
+  }
+}
