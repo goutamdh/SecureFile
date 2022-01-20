@@ -14,7 +14,7 @@ export class AppComponent {
   /**
    * on file drop handler
    */
-  onFileDropped($event: any[]) {
+  onFileDropped($event:Event) {
     this.prepareFilesList($event);
   }
 
@@ -61,7 +61,7 @@ export class AppComponent {
    * Convert Files list to normal array list
    * @param files (Files List)
    */
-  prepareFilesList(files: Array<any>) {
+  prepareFilesList(files: any[]) {
     for (const item of files) {
       item.progress = 0;
       this.files.push(item);
