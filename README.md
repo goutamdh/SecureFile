@@ -18,5 +18,15 @@ Information about the file that can be made available to the user:
 * Restriction to upload max 255 char directory path.
 * Limit the call for file upload api
 
-# Download 
- 
+# Download:
+
+## Files :
+
+* Single file download
+* Bulk download
+
+## Folder: 
+
+* single file download
+* Bulk download
+
